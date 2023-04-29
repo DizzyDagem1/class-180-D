@@ -26,11 +26,11 @@ function render_elements() {
         type: "get",
         success: function (response) {
             let images = {
-                "turn_right": "ar_right.png",
-                "turn_left": "ar_left.png",
-                "slight_right": "ar_slight_right.png",
-                "slight_left": "ar_slight_left.png",
-                "straight": "ar_straight.png"
+                "turn_right": "./assets/ar_right.png",
+                "turn_left": "./assets/ar_left.png",
+                "slight_right": "./assets/ar_slight_right.png",
+                "slight_left": "./assets/ar_slight_left.png",
+                "straight": "./assets/ar_straight.png"
             }
             let steps = response.routes[0].legs[0].steps
             for (let i = 0; i < steps.length; i++) {
